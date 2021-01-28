@@ -1,9 +1,11 @@
 # Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit eutils gnome2-utils scons-utils
+PYTHON_COMPAT=( python3_8 )
+#inherit eutils gnome2-utils scons-utils
+inherit python-any-r1 toolchain-funcs scons-utils
 
 DESCRIPTION="Space exploration, trading & combat in the tradition of Terminal Velocity"
 HOMEPAGE="https://endless-sky.github.io"
